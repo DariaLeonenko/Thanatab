@@ -1,7 +1,7 @@
 import sys
 import os
 import streamlit as st
-
+# бэк вернись
 # Видимость модуля backend
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
