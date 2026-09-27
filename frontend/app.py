@@ -5,7 +5,7 @@ import streamlit as st
 # Видимость модуля backend
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-st.set_page_config(page_title="Thanatab", layout="wide",)
+st.set_page_config(page_title="Thanatab", layout="wide", page_icon= '😀😀')
 
 st.title("Thanatab: Сортировщик вкладок")
 st.write("Локальная система классификации инфо-шума и очистки закладок")
