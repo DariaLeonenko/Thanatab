@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-=======
 import os
 import sys
 
 import streamlit as st
-<<<<<<< HEAD
-# бэк вернись
-# Видимость модуля backend
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-=======
-
+#Hi all
 # Добавление корневой директории в sys.path
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
@@ -17,9 +10,8 @@ if PROJECT_ROOT not in sys.path:
 
 from backend.database import get_bookmarks
 from backend.service import process_bookmark
->>>>>>> 08443d5c09e22c8e5e75fc59c6d597d3af0c2a1a
 
-st.set_page_config(page_title="Thanatab", layout="wide", page_icon= '😀😀')
+st.set_page_config(page_title="Thanatab", layout="wide")
 
 st.title("Thanatab: Сортировщик вкладок")
 st.write("Локальная система классификации инфо-шума и очистки закладок")
@@ -83,4 +75,3 @@ if records:
     )
 else:
     st.info("Активные записи в базе данных отсутствуют.")
->>>>>>> main
